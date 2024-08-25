@@ -1,0 +1,121 @@
+html {
+    background-color: #131315;
+}
+
+body {
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+}
+
+.main-title {
+    grid-column: span 4; /* Заголовок займет все 3 колонки */
+    margin-bottom: 20px; /* Отступ снизу для разделения с блоками */
+    color: white; /* Цвет заголовка */
+    text-align: center;
+    font-size: 50px;
+}
+
+.main-title + img {
+    display: block;
+    margin: 0 auto 20px; /* Центрируем изображение и добавляем отступ снизу */
+    width: 130px; /* Задаем нужный размер изображения */
+    height: auto;
+}
+
+.blocks {
+    border-radius: 20px;
+    background: linear-gradient(#122627 0%, #121819 100%);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    height: 100%;
+    padding: 20px;
+}
+
+.first-block,
+.second-block,
+.third-block,
+.fourth-block,
+.fifth-block,
+.sixth-block,
+.seventh-block,
+.eighth-block {
+    border-radius: 20px;
+    background: linear-gradient(#0b8379 0%, #08625b 100%);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Начинаем выравнивание с верхнего края */
+    height: 450px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Анимация для плавного перехода */
+}
+.first-block:hover,
+.second-block:hover,
+.third-block:hover,
+.fourth-block:hover,
+.fifth-block:hover,
+.sixth-block:hover,
+.seventh-block:hover,
+.eighth-block:hover{
+    transform: translateY(-10px); /* Поднимаем блок на 10px */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Добавляем тень для эффекта подъема */
+    background-color: #084e4a; /* Легкое затемнение фона */
+}
+
+.first-block h1,
+.second-block h1,
+.third-block h1,
+.fourth-block h1,
+.fifth-block h1,
+.sixth-block h1,
+.seventh-block h1,
+.eighth-block h1{
+    margin-top: 5px; /* Маленький отступ сверху для заголовка */
+    margin-bottom: 30px; /* Отступ снизу */
+}
+
+.first-block p,
+.second-block p,
+.third-block p,
+.fourth-block p {
+    margin: 0;
+}
+
+h1,
+p {
+    color: white;
+    opacity: 1;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+p {
+    font-family: FreeMono, monospace;
+    font-size: 18px;
+    margin: 0;
+}
+
+.icon{
+    margin-bottom: 30px;
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+a{
+    color: white;
+    text-decoration: none !important;
+    border: none !important;
+}
+
+footer{
+    text-align: center;
+    font-size: 6px;
+}
+.for_ppl{
+    margin-bottom: 10px;
+}
