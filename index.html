@@ -2,89 +2,117 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Модификации и ресурспаки пепеленда</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="https://i.imgur.com/zkJrata.png" type="image/x-icon">
 </head>
 <body>
-<div class="blocks">
+<header>
   <h1 class="main-title">Модификации и ресурспаки пепеленда</h1>
-  <a href="https://github.com/Nakolotnik/Ppl34-genes-Guide/releases" target="_blank">
-    <div class="first-block">
-      <h1>Мод для 34го эксперимента</h1>
-      <img src="https://i.imgur.com/6aITty0.png" alt="">
-      <p>Данный мод позволяет в майнкрфте смотреть информацию о способностях каждого гена. По умолчанию клавиша для открытия генного меню - английская K</p>
-      <p>Автор мода: Nakolotnik</p>
-    </div>
-  </a>
-
-  <a href="https://drive.google.com/uc?id=1p3HA3A64S1rhasyCUQLadOdmcFO_xI0b&export=download" target="_blank">
-    <div class="second-block">
-      <h1>Официальный ресурспак пепеленда</h1>
-      <img class="icon" src="https://i.imgur.com/5uWfSGE.png" alt="" height="132px">
-      <p>Данный ресурспак добавляет много кастомных предметов одежды, а также смайлы с дискорда и твича Пугода</p>
-    </div>
-  </a>
-
-  <a href="https://modrinth.com/mod/ppl-pack-updater" target="_blank">
-  <div class="third-block">
-    <h1>Мод на авто-обновление ресурспака пепеленда</h1>
-    <img class="icon" src="https://cdn.modrinth.com/data/2q5rFYRG/0ceb3f2280e14a8f2dd0141a51718bbf3905a000.png" alt="">
-    <p>Этот мод при каждом входе майнкрафта быстро проверит наличие новой версии ресурспака ппл и в случае обнаружения сразу загрузит его и уведомит об этом в чате</p>
-    <p>Автор: AndcoolSystems</p>
-  </div>
-  </a>
-
-  <a href="https://modrinth.com/mod/pochatok" target="_blank">
-  <div class="fourth-block">
-    <h1>Модификация "Pochatok"</h1>
-    <img class="icon" src="https://cdn.modrinth.com/data/a0cJA11L/d16baa511f8bcae6b7a6450a7f63ca283a56dca2.png" alt="" height="132px">
-    <p>Данный мод добавляет некоторые функции, такие как: поиск текста на табличках, возможность отключать ники игроков/ников от бирки, добавление быстрого креативного полёта и возможность включать отображение блоков света</p>
-    <p>Автор: _theEvilM_</p>
-  </div>
-  </a>
-
-  <a href="https://modrinth.com/resourcepack/pepeprikol" target="_blank">
-    <div class="fifth-block">
-      <h1>Ресурспак, заменяющий сердца на пепе</h1>
-      <img class="icon" src="https://cdn.modrinth.com/data/yOWmCpCS/25c124131a7e1931c2216887cf5cb48be373362c.png" alt="" height="132px">
-      <p>Этот ресурспак был создан для пипочатеров, и пепелендовцев. Он заменяет сердца, и частично HUD. Также если у вас есть мод на Voice Chat, будут заменены иконки на смешных пепе (скоро будут добавлены картинки)</p>
-      <p>Автор: eligutuhne</p>
-    </div>
-  </a>
-
-  <a href="https://modrinth.com/resourcepack/ppltotems" target="_blank">
-    <div class="sixth-block">
-      <h1>Ресурспак "PepeLand Totems"</h1>
-      <img class="icon" src="https://cdn.modrinth.com/data/ddTUVHce/5627f466606268145e710b68d2e3bddb765a4495.png" alt="" height="132px">
-      <p>Этот ресурспак заменяет модель тотема на модель игрока пепеленд 8, именем которого вы переименовали тотем</p>
-      <p>Автор: felugoz</p>
-    </div>
-  </a>
-
-  <a href="https://modrinth.com/resourcepack/diamonds-to-money-(ppl)" target="_blank">
-    <div class="seventh-block">
-      <h1>Ресурспак, заменяющий алмазы на деньги</h1>
-      <img style="width: 132px" class="icon" src="https://cdn.modrinth.com/data/Eo2XW3gI/34cacbdbd17f52a19cb3d62cf98611aa5e707f55.png" alt="" height="132px">
-      <p>Этот простой ресурспак заменяет модельку алмазов, которые на пепеленде используются как деньги, на модельку купюры, в цветах алмаза</p>
-      <p>Автор: latynnity_tas</p>
-    </div>
-  </a>
-
-  <a href="https://modrinth.com/resourcepack/diamonds-to-money-(ppl)" target="_blank">
-    <div class="seventh-block">
-      <h1>Модификация "Action Bar Info"</h1>
-      <img class="icon" src="https://cdn.modrinth.com/data/lOMJjkKe/059fd49e70a597c8c598482a5760229c5abfe047.png" alt="" height="132px">
-      <p>Модификация позволяет отображать время, координаты и прочую информацию прямо над хотбаром игрока.</p>
-      <p>Автор: Kel_Cuprum</p>
-    </div>
-  </a>
+  <noscript>Еблан, включи js</noscript>
+</header>
+<div class="filter">
+<h2>Фильтровать: </h2>
+  <select id="selectBox">
+    <option>Показывать и моды и ресурспаки</option>
+    <option>Показывать только моды</option>
+    <option>Показывать только ресурспаки</option>
+  </select>
 </div>
+<main class="blocks">
+  <a href="https://modrinth.com/mod/pepeland-34-genes" target="_blank" class="mod">
+    <h1>Мод для 34го эксперимента</h1>
+    <img src="https://i.imgur.com/6aITty0.png" alt="Mod Image">
+    <p>Данный мод позволяет в майнкрфте смотреть информацию о способностях каждого гена.</p>
+    <p>Автор мода: Nakolotnik</p>
+  </a>
+
+  <a href="https://drive.google.com/uc?id=1p3HA3A64S1rhasyCUQLadOdmcFO_xI0b&export=download" target="_blank" class="rp">
+    <h1>Официальный ресурспак пепеленда</h1>
+    <img class="icon" src="https://i.imgur.com/5uWfSGE.png" alt="Resource Pack Image" >
+    <p>Данный ресурспак добавляет много кастомных предметов одежды, а также смайлы с дискорда Пугода</p>
+    <p>Хз кто автор</p>
+  </a>
+
+  <a href="https://modrinth.com/mod/ppl-pack-updater" target="_blank" class="mod">
+    <h1>Авто-обновление рп пепеленда</h1>
+    <img class="icon" src="https://cdn.modrinth.com/data/2q5rFYRG/0ceb3f2280e14a8f2dd0141a51718bbf3905a000.png" alt="Pack Updater Image">
+    <p>Этот мод при каждом входе в майнкрафт сразу загрузит новую версию ресурспака ппл и уведомит об этом в чате</p>
+    <p>Автор: AndcoolSystems</p>
+  </a>
+
+  <a href="https://modrinth.com/mod/pochatok" target="_blank" class="mod">
+    <h1>Модификация "Pochatok"</h1>
+    <img class="icon" src="https://cdn.modrinth.com/data/a0cJA11L/d16baa511f8bcae6b7a6450a7f63ca283a56dca2.png" alt="Pochatok Mod Image" >
+    <p>Данный мод добавляет: поиск текста на табличках, возможность отключать ники игроков/ников от бирки и возможность включать отображение блоков света</p>
+    <p>Автор: _theEvilM_</p>
+  </a>
+
+  <a href="https://modrinth.com/resourcepack/pepeprikol" target="_blank" class="rp">
+    <h1>Пепе-сердца ресурспак</h1>
+    <img class="icon" src="https://cdn.modrinth.com/data/yOWmCpCS/25c124131a7e1931c2216887cf5cb48be373362c.png" alt="Pepe Heart Resource Pack Image" >
+    <p>Этот ресурспак был создан для пипочатеров, и пепелендовцев. Он заменяет сердца, и частично HUD. Также если у вас есть мод на Voice Chat, будут заменены иконки на смешных пепе (скоро будут добавлены картинки)</p>
+    <p>Автор: eligutuhne</p>
+  </a>
+
+  <a href="https://modrinth.com/resourcepack/ppl8totems" target="_blank" class="rp">
+    <h1>Ресурспак "PepeLand Totems"</h1>
+    <img class="icon" src="https://cdn.modrinth.com/data/ddTUVHce/5627f466606268145e710b68d2e3bddb765a4495.png" alt="PepeLand Totems Resource Pack Image" height="132px">
+    <p>Этот ресурспак заменяет модель тотема на модель игрока ппл 8, именем которого вы переименовали тотем</p>
+    <p>Автор: felugoz</p>
+  </a>
+
+  <a href="https://modrinth.com/resourcepack/diamonds-to-money-(ppl)" target="_blank" class="rp">
+    <h1>Замена алмазов на деньги</h1>
+    <img class="icon" src="https://cdn.modrinth.com/data/Eo2XW3gI/34cacbdbd17f52a19cb3d62cf98611aa5e707f55.png" alt="Diamonds to Money Resource Pack Image" height="132px">
+    <p>Этот простой ресурспак заменяет модельку алмазов, которые на пепеленде используются как деньги, на модельку купюры, в цветах алмаза</p>
+    <p>Автор: latynnity_tas</p>
+  </a>
+
+  <a href="https://modrinth.com/resourcepack/diamonds-to-money-(ppl)" target="_blank" class="mod">
+    <h1>Модификация "Action Bar Info"</h1>
+    <img class="icon" src="https://cdn.modrinth.com/data/lOMJjkKe/059fd49e70a597c8c598482a5760229c5abfe047.png" alt="Action Bar Info Mod Image" >
+    <p>Модификация позволяет отображать время, координаты и прочую информацию прямо над хотбаром игрока.</p>
+    <p>Автор: Kel_Cuprum</p>
+  </a>
+
+  <a href="https://modrinth.com/resourcepack/mini-pwgood" target="_blank" class="rp">
+    <h1>Ресурспак на Пугода в инвентаре</h1>
+    <img class="icon" src="https://cdn.modrinth.com/data/oatKxln9/58a109e29a796fc2746f8303359a2280c222338e.gif" alt="PWGood Resourcepack" >
+    <p>Ресурспак добавит вам в инвентарь маленького Пугодика.</p>
+    <p>Автор: f_gav</p>
+  </a>
+
+  <a href="https://modrinth.com/resourcepack/pwgooodik" target="_blank" class="rp">
+    <h1>Ресурспак "PwGood'ik"</h1>
+    <img class="icon" src="https://cdn.modrinth.com/data/ZGgRrr0A/222cb63479c7440da95e075a72e59246b9f6484e.png" alt="PWGood'ik">
+    <p>Ресурспак заменяет текстуру векса на текстуру ПВГудика с дверьми вместо крыльев</p>
+    <p>Автор: k0ozochka</p>
+  </a>
+
+  <a href="https://modrinth.com/resourcepack/pwhearts" target="_blank" class="rp">
+    <h1>Ресурспак на шляпные сердечки</h1>
+    <img class="icon" src="https://cdn.modrinth.com/data/iJJQakin/663a33b33a78dc0b0be961a67df71fe4304f8831.png" alt="PWGhearts">
+    <p>Простенький, но прикольный ресурспак, с которым сейчас (на момент написания) гоняет Пугод</p>
+    <p>Автор: Reavel</p>
+  </a>
+
+  <a href="https://www.planetminecraft.com/texture-pack/pwgood3-totem/" target="_blank" class="rp">
+    <h1>PWGood3 totem ресурспак</h1>
+    <img class="icon" src="https://i.imgur.com/wHn7mhs.jpeg" alt="PWGood3 totem">
+    <p>Наиболее pwgood3 ресурспак. Спасибо за детство, легенда</p>
+    <p>Автор: midnEGGht</p>
+  </a>
+
+</main>
+
 <footer>
   <a href="https://pepeland.net/" target="_blank">
-  <img class="for_ppl" src="https://wsrv.nl/?url=https%3A%2F%2Fwf.kelcu.ru%2Fbudge%2Fpepeland%2Fmade%2520for%2Fcozy_vector.svg&n=-1" alt="" height="62px">
+    <img class="for_ppl" src="https://wsrv.nl/?url=https%3A%2F%2Fwf.kelcu.ru%2Fbudge%2Fpepeland%2Fmade%2520for%2Fcozy_vector.svg&n=-1" alt="PepeLand Logo" height="62">
   </a>
-  <p>Создатель данной страницы MrAngames. Если нашли баг или хотите добавление вашего проекта, связанного с пепелендом, то пишите мне в дискорд: @mrangames  </p>
+  <p>Создатель данной страницы MrAngames. Если нашли баг или хотите добавление вашего проекта, связанного с пепелендом, то пишите мне в дискорд: @mrangames</p>
 </footer>
+<script src="main.js"></script>
 </body>
 </html>
