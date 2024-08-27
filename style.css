@@ -1,5 +1,5 @@
 html {
-    background: linear-gradient(#122627 0%, #121819 100%);
+    background: #121819;
 }
 
 body {
@@ -8,14 +8,19 @@ body {
     padding: 0;
     overflow-x: hidden; /* Убираем горизонтальный скролл */
 }
+main{
+    background: linear-gradient(#122627 0%, #121819 100%);
+
+}
 .icon{
     height: 132px;
     width: 132px;
 }
-header {
+header, .filter {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #122627;
 }
 
 header img {
