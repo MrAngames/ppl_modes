@@ -1,7 +1,7 @@
 const selectBox = document.getElementById('selectBox');
 const mods = document.getElementsByClassName("mod");
 const resourcePacks = document.getElementsByClassName("rp");
-
+sort(selectBox.value);
 selectBox.addEventListener('change', (e) => {
     sort(selectBox.value);
 });
