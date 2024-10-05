@@ -8,14 +8,15 @@ body {
     padding: 0;
     overflow-x: hidden; /* Убираем горизонтальный скролл */
 }
-main{
+main {
     background: linear-gradient(#122627 0%, #121819 100%);
-
 }
-.icon{
+
+.icon {
     height: 132px;
     width: 132px;
 }
+
 header, .filter {
     display: flex;
     align-items: center;
@@ -33,7 +34,7 @@ header img {
     margin: 0;
     color: white;
     text-align: center;
-    font-size: 50px;
+    font-size: 50px; /* Начальный размер шрифта */
 }
 
 .main-title + img {
@@ -76,7 +77,6 @@ header img {
     box-shadow: 0 8px 16px rgb(45, 210, 189); /* Светящийся эффект при наведении */
     background-color: rgba(11, 131, 121, 0.1); /* Небольшое затемнение при наведении */
 }
-
 
 .blocks > a img {
     max-width: 100%;
@@ -148,6 +148,18 @@ footer p {
     .blocks {
         grid-template-columns: 1fr;
     }
+    .main-title {
+        font-size: 30px; /* Уменьшаем размер заголовка для маленьких экранов */
+    }
+    .filter {
+        flex-direction: column; /* Упорядочиваем элементы фильтра по вертикали */
+        align-items: center; /* Выравниваем по центру */
+        font-size: 14px; /* Уменьшаем размер шрифта для фильтра */
+    }
+    .filter select {
+        width: 100%; /* Делает селектор шире на мобильных устройствах */
+        font-size: 14px; /* Уменьшаем размер шрифта для селектора */
+    }
 }
 
 button {
@@ -159,12 +171,14 @@ button {
     box-shadow: none;  /* Убирает тени */
     cursor: pointer;   /* Меняет курсор на указатель */
 }
-.filter{
+
+.filter {
     position: relative;
     display: flex;
     justify-content: center;
     color: white;
 }
+
 .filter select {
     height: 40px;
     margin: 17px 0 20px 20px;
@@ -184,6 +198,9 @@ button {
     border: 1px solid rgba(45, 210, 189, 0.7); /* Тонкая рамка при фокусе */
     box-shadow: 0 0 10px rgba(45, 210, 189, 0.8); /* Усиленное свечение при фокусе */
 }
+
+/* Стили
+
 
 /* Стили для опций */
 .filter select option {
