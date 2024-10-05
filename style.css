@@ -54,7 +54,9 @@ header img {
 
 .blocks > a {
     border-radius: 20px;
-    background: linear-gradient(#0b8379 0%, #08625b 100%);
+    background: transparent; /* Прозрачный фон */
+    border: 2px solid rgba(11, 131, 121, 0.5); /* Чуть более тёмная граница */
+    box-shadow: 0 0 15px rgb(27, 161, 143); /* Эффект свечения */
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -66,14 +68,15 @@ header img {
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
     overflow: hidden;
     position: relative;
-    text-decoration: none; /* Убираем подчеркивание ссылки */
+    text-decoration: none;
 }
 
 .blocks > a:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-    background-color: #084e4a;
+    box-shadow: 0 8px 16px rgb(45, 210, 189); /* Светящийся эффект при наведении */
+    background-color: rgba(11, 131, 121, 0.1); /* Небольшое затемнение при наведении */
 }
+
 
 .blocks > a img {
     max-width: 100%;
@@ -166,14 +169,38 @@ button {
     height: 40px;
     margin: 17px 0 20px 20px;
     outline: none;
-    background-color: #0b8379;
+    background-color: transparent; /* Прозрачный фон */
     border-radius: 10px;
-    border: none;
+    border: 1px solid rgba(11, 131, 121, 0.5); /* Более мягкая граница */
+    box-shadow: 0 0 8px rgba(27, 161, 143, 0.5); /* Уменьшенное свечение */
     color: white;
     width: 280px;
     font-size: 16px;
     text-align: center;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
 }
-.mod:hover, .rp:hover {
-    opacity: 0.85;
+
+.filter select:focus {
+    border: 1px solid rgba(45, 210, 189, 0.7); /* Тонкая рамка при фокусе */
+    box-shadow: 0 0 10px rgba(45, 210, 189, 0.8); /* Усиленное свечение при фокусе */
 }
+
+/* Стили для опций */
+.filter select option {
+    background-color: #122627; /* Основной цвет опций как у сайта */
+    color: white; /* Цвет текста */
+    padding: 10px; /* Добавляем отступы для вариантов */
+}
+
+/* Цвет опций при наведении */
+.filter select option:hover {
+    background-color: rgba(11, 131, 121, 0.2); /* Цвет фона при наведении, чуть светлее сайта */
+}
+
+/* Цвет опций при выборе */
+.filter select option:focus {
+    background-color: rgba(45, 210, 189, 0.3); /* Цвет фона при выборе */
+}
+
+
+
